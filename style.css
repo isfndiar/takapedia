@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  padding: 1% 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+/* nav .logo {
+    background-color:  white;
+} */
+
+nav .list-kategori a.list-input {
+  color: black;
+  font-weight: 300;
+}
+
+nav .container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+nav .container .input-group {
+  width: 100%;
+  padding: 0.3rem 0.6rem;
+  border: solid 1px black;
+  background-color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+nav .container .input-group i.fa-solid {
+  color: gray;
+}
+
+.input-group input {
+  width: 100%;
+  font-size: 0.9rem;
+  background: transparent;
+  border: none white;
+  text-decoration: none;
+  outline: none;
+  padding: 5px;
+}
+
+.container .row a {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+nav .shopping {
+  border-right: solid 1px rgba(128, 128, 128, 0.253);
+  padding: 0 2rem;
+}
+
+nav .register button {
+  padding: 0.5rem 0.6rem;
+  font-weight: 700;
+}
+
+nav .register button:hover {
+  cursor: pointer;
+}
+
+nav .register .btn-outline {
+  background: none;
+  border: rgb(23, 204, 23) 1px solid;
+  border-radius: 10px;
+  color: rgb(23, 204, 23);
+}
+
+nav .register .btn-fill {
+  background-color: rgb(23, 204, 23);
+  border: 1px solid rgb(23, 204, 23);
+  border-radius: 10px;
+  color: white;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  padding-top: 120px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+}
+
+.myslides {
+  display: none;
+}
+
+/* Prev next button */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
